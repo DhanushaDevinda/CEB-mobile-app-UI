@@ -23,7 +23,7 @@
             android:layout_marginBottom="10dp"
             android:padding="15dp"
             android:textColor="#6b0233"
-            android:text="Acc No:                          4690224245     Acc Name:                                Home                                 Name and Address:                                                H.M.S Samarasekara,                                     no:45,                                                        Domple,                                                Migoda."
+            android:text="Acc No:                          4690224245     Acc Name:                                Home                                 Name and Address:                                                Kethaki Padmaperuma,                                     no:115,                                                        Dampe road,                                                Migoda."
             tools:layout_editor_absoluteX="116dp"
             tools:layout_editor_absoluteY="144dp" />
 

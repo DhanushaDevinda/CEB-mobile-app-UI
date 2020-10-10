@@ -23,14 +23,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Hansari Gunasekara"
+        android:text="Kethaki Padmaperuma"
         android:textColor="#ffffff"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="hansari99@gmail.com"
+        android:text="kethaki99@gmail.com"
         android:id="@+id/textView"
         android:textColor="#ffffff"/>
 </LinearLayout>

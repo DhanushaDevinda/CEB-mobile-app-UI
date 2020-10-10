@@ -34,7 +34,7 @@
             android:textColor="#6b0233"
             android:textAlignment="viewEnd"
             android:layout_marginTop="20dp"
-            android:text="10-AUG-2020  "
+            android:text="10-SEP-2020  "
             android:textSize="16dp"
             android:gravity="end" />
 
@@ -220,7 +220,7 @@
             android:textAlignment="viewEnd"
             android:layout_marginTop="0dp"
             android:textColor="#6b0233"
-            android:text="RS. -3.22  "
+            android:text="RS. -3.50  "
             android:textSize="16dp"
             android:gravity="end" />
 
@@ -282,7 +282,7 @@
             android:layout_marginLeft="26dp"
             android:layout_marginTop="0dp"
             android:textColor="#6b0233"
-            android:text="RS. 5020.92  "
+            android:text="RS. 1969.00  "
             android:textAlignment="viewEnd"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
             android:textSize="18dp"

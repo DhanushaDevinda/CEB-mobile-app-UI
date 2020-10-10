@@ -33,7 +33,7 @@
             android:textColor="#000000"
             android:layout_marginBottom="10dp"
             android:padding="15dp"
-            android:text="Sample Complaint                                  H.D.K Samarasekara, Welipillawa, Kadawatha."
+            android:text="Sample Complaint                                  Kethaki Padmaperuma, Dampe Road, Migoda."
             tools:layout_editor_absoluteX="116dp"
             tools:layout_editor_absoluteY="144dp" />
 

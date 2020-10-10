@@ -2,9 +2,14 @@
 <resources>
     <string-array name="selectAcc">
         <item>Select an Account</item>
+        <item>Kethaki Padmaperuma</item>
     </string-array>
     <string-array name="compalintType">
         <item>Complaint type</item>
+        <item>One phase out</item>
+        <item>High voltage</item>
+        <item>Meter burning</item>
+        <item>Conductor burning</item>
     </string-array>
     <string-array name="domestic">
         <item>Domestic</item>

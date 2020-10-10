@@ -39,6 +39,17 @@ public class MainActivity extends AppCompatActivity
 
         View i = findViewById(R.id.inter);
 
+        View power = findViewById(R.id.power);
+
+        power.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, NewComplaintActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
         i.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
