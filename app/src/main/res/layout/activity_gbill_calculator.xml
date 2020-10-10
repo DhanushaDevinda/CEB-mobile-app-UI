@@ -34,8 +34,9 @@
             <Spinner
                 android:id="@+id/spinner1"
                 android:layout_width="230dp"
-                android:layout_height="40dp"
+                android:layout_height="wrap_content"
                 android:layout_marginBottom="10dp"
+                android:entries="@array/domestic"
                 android:padding="15dp"
                 tools:layout_editor_absoluteX="8dp"
                 tools:layout_editor_absoluteY="386dp" />
@@ -147,6 +148,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/numberofunit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -158,15 +160,16 @@
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:textColor="#6b0233"
-                android:text="Number of Units Per Day" />
+                android:text="Number of Units Per Day"
+                android:textColor="#6b0233" />
 
             <ImageView
                 android:id="@+id/imageView4"
                 android:layout_width="40dp"
-                android:layout_marginTop="8dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+
             <EditText
                 android:id="@+id/editText1115"
                 android:layout_width="100dp"
@@ -183,10 +186,9 @@
             <ImageView
                 android:id="@+id/imageView5"
                 android:layout_width="35dp"
-                android:layout_marginTop="8dp"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
                 app:srcCompat="@drawable/ic_remove_circle_black_24dp" />
-
 
 
         </LinearLayout>

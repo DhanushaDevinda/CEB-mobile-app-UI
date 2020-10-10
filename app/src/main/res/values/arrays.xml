@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="selectAcc">
+        <item>Select an Account</item>
+    </string-array>
+    <string-array name="compalintType">
+        <item>Complaint type</item>
+    </string-array>
+    <string-array name="domestic">
+        <item>Domestic</item>
+        <item>Normal</item>
+    </string-array>
+</resources>
