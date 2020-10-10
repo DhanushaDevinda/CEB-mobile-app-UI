@@ -33,7 +33,7 @@ public class HSubscribeAccActivity extends AppCompatActivity {
       pay.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View view) {
-              Intent intent = new Intent(HSubscribeAccActivity.this, PaymentProcessActivity.class);
+              Intent intent = new Intent(HSubscribeAccActivity.this, InstanceBillActivity.class);
               startActivity(intent);
           }
       });
