@@ -9,212 +9,221 @@
     tools:context=".InstanceBillActivity">
 
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="156dp"
-        android:textColor="#6b0233"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="INSTANT BILL PAY"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="16dp" />
-
-    <TextView
-        android:id="@+id/textView30"
-        android:layout_width="346dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textColor="#6b0233"
-        android:layout_marginTop="20dp"
-        android:text="Please enter the account number"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="9dp"
-        android:background="@drawable/edit_text_border2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:padding="12dp"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="364dp" />
-
-    <TextView
-        android:id="@+id/textView31"
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="0dp"
-        android:textColor="#6b0233"
-        android:text="the entered account number matches with following user."
-        android:textSize="16dp" />
-
-    <TextView
-        android:id="@+id/textView32"
-        android:layout_width="191dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:textColor="#6b0233"
-        android:text="Acc. holder's name:"
-        android:textSize="16dp" />
-
-    <TextView
-        android:id="@+id/textView33"
-        android:layout_width="191dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Acc. No: "
-        android:textColor="#6b0233"
-        android:textSize="16dp" />
-
-    <TextView
-        android:id="@+id/textView34"
-        android:layout_width="191dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="Total bill:"
-        android:textColor="#6b0233"
-        android:textSize="16dp" />
-
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="191dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textColor="#6b0233"
-        android:layout_marginTop="20dp"
-        android:text="Amount"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/editText16"
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="9dp"
-        android:background="@drawable/edit_text_border2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:padding="12dp"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="364dp" />
-
-    <TextView
-        android:id="@+id/textView36"
-        android:layout_width="191dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:textColor="#6b0233"
-        android:layout_marginTop="10dp"
-        android:text="Email"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="16dp" />
-
-    <EditText
-        android:id="@+id/editText17"
-        android:layout_width="372dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="9dp"
-        android:background="@drawable/edit_text_border2"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:padding="12dp"
-        android:textSize="16dp"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="364dp" />
-
-    <TextView
-        android:id="@+id/textView37"
-        android:layout_width="372dp"
-        android:textColor="#6b0233"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="0dp"
-        android:text="online payment receipt send to this email"
-        android:textSize="16dp" />
-
-    <TextView
-        android:id="@+id/textView38"
-        android:layout_width="191dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:text="Choose payment method"
-        android:textColor="#6b0233"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textSize="16dp" />
-
-    <LinearLayout
-        android:layout_width="398dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:orientation="horizontal">
-
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#6b0233"
-            android:text="Visa/Master" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="122dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#6b0233"
-            android:text="Amex" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="374dp"
-        android:layout_height="95dp"
-        android:layout_marginLeft="20dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView39"
-            android:layout_width="193dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="0dp"
-            android:layout_marginTop="0dp"
-            android:textColor="#6b0233"
-            android:text="0.95% Convenience fee will be absorbed by ceb for ordinary supply consumer up to 1000,000.00 LKR"
-            android:textSize="16dp" />
-
-        <TextView
-            android:id="@+id/textView40"
-            android:layout_width="180dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="9dp"
-            android:layout_marginTop="0dp"
-            android:textColor="#6b0233"
-            android:text="No any Convenience fee"
-            android:textSize="16dp" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button6"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="#6b0233"
-        android:text="Pay Now"
-        android:textColor="#ffffff" />
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="156dp"
+                android:textColor="#6b0233"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="INSTANT BILL PAY"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#6b0233"
+                android:layout_marginTop="20dp"
+                android:text="Please enter the account number"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/edit_text_border2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:textColor="#6b0233"
+                android:text="the entered account number matches with following user."
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#6b0233"
+                android:text="Acc. holder's name:"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Acc. No: "
+                android:textColor="#6b0233"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Total bill:"
+                android:textColor="#6b0233"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#6b0233"
+                android:layout_marginTop="20dp"
+                android:text="Amount"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/editText16"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/edit_text_border2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textColor="#6b0233"
+                android:layout_marginTop="10dp"
+                android:text="Email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/editText17"
+                android:layout_width="372dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/edit_text_border2"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="364dp" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="372dp"
+                android:textColor="#6b0233"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="0dp"
+                android:text="online payment receipt send to this email"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="Choose payment method"
+                android:textColor="#6b0233"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="16dp" />
+
+            <LinearLayout
+                android:layout_width="398dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
 
 
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#6b0233"
+                    android:text="Visa/Master" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="122dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#6b0233"
+                    android:text="Amex" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="374dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="193dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#6b0233"
+                    android:text="0.95% Convenience fee will be absorbed by ceb for ordinary supply consumer up to 1000,000.00 LKR"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#6b0233"
+                    android:text="No any Convenience fee"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#6b0233"
+                android:text="Pay Now"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
