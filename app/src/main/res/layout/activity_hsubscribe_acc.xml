@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HSubscribeAccActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:background="@drawable/titile"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:textColor="#6b0233"
+            android:text="Acc No:                          4690224245     Acc Name:                                Home                                 Name and Address:                                                H.M.S Samarasekara,                                     no:45,                                                        Domple,                                                Migoda."
+            tools:layout_editor_absoluteX="116dp"
+            tools:layout_editor_absoluteY="144dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/bills"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/rounded_corners2"
+                android:text="Bills"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/payment"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/rounded_corners2"
+                android:text="Payments"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/lastbill"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/rounded_corners2"
+                android:text="Last Bill"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/paynow"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/rounded_corners2"
+                android:text="Pay Now"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/accdelete"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/rounded_corners2"
+                android:text="Acc Delete"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="495dp"
+        android:background="#6b0233"
+        android:text="Subscription Electricity Account"
+        android:textColor="#ffffff"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="698dp" />
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ceb">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".RegistrationActivity"></activity>
+        <activity android:name=".PaymentProcessActivity" />
+        <activity android:name=".HPaymentActivity" />
+        <activity android:name=".HLastBillActivity" />
+        <activity android:name=".InteruptionCalActivity" />
+        <activity android:name=".InstanceBillActivity" />
+        <activity android:name=".HElectricityBillActivity" />
+        <activity android:name=".ComplaintListActivity" />
+        <activity android:name=".SAccessByActivity" />
+        <activity android:name=".HConfirmPaymentActivity" />
+        <activity android:name=".GBillCalculatorActivity" />
+        <activity android:name=".HSubscribeAccActivity" />
+        <activity android:name=".HSubscriptionAccActivity" />
+        <activity android:name=".NewComplaintActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

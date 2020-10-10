@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/aceess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/titile"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/titile"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="95dp"
+                        android:layout_height="59dp"
+                        app:srcCompat="@drawable/accessbycensus" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/titile"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Assess by cencses"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="We can get idea about no of unit per day"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/titile"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/titile"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView112"
+                        android:layout_width="95dp"
+                        android:layout_height="59dp"
+                        app:srcCompat="@drawable/billcalculator" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/titile"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Bill Calculator"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="We can calculate your own bill"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/titile"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/titile"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageV1iew12"
+                        android:layout_width="95dp"
+                        android:layout_height="59dp"
+                        app:srcCompat="@drawable/interruptioncalendar" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/titile"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Interruption calendar"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Find upcoming power cuts(maintenance etc earlier)"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/titile"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingTop="20dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/titile"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="95dp"
+                        android:layout_height="59dp"
+                        app:srcCompat="@drawable/news" />
+
+                    <TextView
+                        android:id="@+id/textView51"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:text="CEB News"
+                        android:textColor="#000000"
+                        android:textSize="20dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/titile"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/titile"
+                    android:orientation="horizontal"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageVi1ew12"
+                        android:layout_width="95dp"
+                        android:layout_height="59dp"
+                        app:srcCompat="@drawable/poweroutage" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/titile"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Power Outage?"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="2020-08-22 16:41:12"
+                            android:textSize="14dp" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Lodge electricity complaints with few touches without calling."
+                            android:textSize="16dp" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="We are waiting to help you"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

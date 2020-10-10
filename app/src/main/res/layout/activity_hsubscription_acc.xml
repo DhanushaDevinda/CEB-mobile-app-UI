@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    tools:context=".HSubscriptionAccActivity">
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border2"
+        android:ems="10"
+        android:hint="Name for Electricity Account"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="238dp" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border2"
+        android:ems="10"
+        android:hint="Electricity Account Number"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_text_border2"
+        android:ems="10"
+        android:hint="Premises ID's"
+        android:inputType="textPersonName"
+        android:padding="12dp"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="490dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="80dp"
+            android:background="@drawable/rounded_corners2"
+            android:text="Edit"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/rounded_corners2"
+            android:text="Delete"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

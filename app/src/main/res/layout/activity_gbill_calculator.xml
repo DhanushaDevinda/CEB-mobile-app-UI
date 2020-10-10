@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GBillCalculatorActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="150dp"
+                android:textColor="#6b0233"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tariff Type" />
+
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="230dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:padding="15dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="386dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView711"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="Tariff (Per Unit)" />
+
+            <TextView
+                android:id="@+id/textView2711"
+                android:layout_width="230dp"
+                android:textColor="#6b0233"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Rs. 11.00   "
+                android:textAlignment="viewEnd"
+                android:gravity="end" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7711"
+                android:layout_width="160dp"
+                android:textColor="#6b0233"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Units" />
+
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Daily"
+                android:textColor="#6b0233"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="293dp" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Custom"
+                android:textColor="#6b0233"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="293dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7111"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="Number of days" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+            <EditText
+                android:id="@+id/editText11115"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_border2"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="61dp"
+                tools:layout_editor_absoluteY="608dp" />
+
+            <ImageView
+                android:id="@+id/imageView51"
+                android:layout_width="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_remove_circle_black_24dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView7211"
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="Number of Units Per Day" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_add_circle_black_24dp" />
+            <EditText
+                android:id="@+id/editText1115"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/edit_text_border2"
+                android:ems="10"
+                android:hint=""
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:textSize="16dp"
+                tools:layout_editor_absoluteX="61dp"
+                tools:layout_editor_absoluteY="608dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_remove_circle_black_24dp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/rounded_corners2"
+        android:text="Calculate"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView12311"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#6b0233"
+            android:layout_marginRight="5dp"
+            android:text="Usage charge                                                                1.26        Fixed Charge                                                                 4.17" />
+
+        <TextView
+            android:id="@+id/textView12312"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#6b0233"
+            android:text="Total Charge                    Rs. 2450.00"
+            android:textSize="22dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

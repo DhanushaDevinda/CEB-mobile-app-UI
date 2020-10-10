@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_complaints"
+            android:icon="@drawable/ic_error_black_24dp"
+            android:title="@string/menu_complaints" />
+        <item
+            android:id="@+id/nav_outage_map"
+            android:icon="@drawable/ic_map_black_24dp"
+            android:title="@string/menu_outage" />
+        <item
+            android:id="@+id/nav_interruption"
+            android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+            android:title="@string/menu_interruption" />
+
+        <item
+            android:id="@+id/nav_bill_payment"
+            android:icon="@drawable/ic_account_balance_wallet_black_24dp"
+            android:title="@string/menu_bill_payment" />
+    </group>
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_bill_cal"
+                android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+                android:title="@string/menu_bill_calender" />
+            <item
+                android:id="@+id/nav_access_by"
+                android:icon="@drawable/ic_assignment_black_24dp"
+                android:title="@string/menu_assess" />
+        </menu>
+    </item>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_electricity_acc"
+                android:icon="@drawable/ic_filter_none_black_24dp"
+                android:title="@string/menu_account" />
+            <item
+                android:id="@+id/nav_my_profile"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="@string/menu_profile" />
+
+            <item
+                android:id="@+id/nav_my_about"
+                android:icon="@drawable/ic_error_outline_black_24dp"
+                android:title="@string/menu_about" />
+
+            <item
+                android:id="@+id/nav_my_logout"
+                android:icon="@drawable/ic_power_settings_new_black_24dp"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>

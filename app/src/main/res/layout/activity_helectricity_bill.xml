@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/titile"
+    tools:context=".HElectricityBillActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:textColor="#6b0233"
+            android:layout_marginTop="0dp"
+            android:text="Electricity Account No"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:textColor="#6b0233"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:text="4690224315"
+            android:textAlignment="viewEnd"
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:textColor="#6b0233"
+            android:id="@+id/textView34"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Billing Date"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:textColor="#6b0233"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:text="10-AUG-2020"
+            android:textAlignment="viewEnd"
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="198dp"
+            android:textColor="#6b0233"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Total no of units consumed"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="130dp"
+            android:textColor="#6b0233"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="0dp"
+            android:text="116"
+            android:textAlignment="viewEnd"
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:textColor="#6b0233"
+            android:layout_marginTop="0dp"
+            android:text="Charge for units consumed"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#6b0233"
+            android:text="1492.50    "
+            android:textAlignment="viewEnd"
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#6b0233"
+            android:text="Fixed charge"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#6b0233"
+            android:text="480.00    "
+            android:textAlignment="viewEnd"
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:text="Fuel adjustment charge"
+            android:textColor="#6b0233"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="0dp"
+            android:text="0.00    "
+            android:textColor="#6b0233"
+            android:textAlignment="viewEnd"
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#6b0233"
+            android:text="Charge for electricity consumed"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:text="1972.50    "
+            android:textColor="#6b0233"
+            android:textAlignment="viewEnd"
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#6b0233"
+            android:text="Total cost for supply"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView28"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:textColor="#6b0233"
+            android:layout_marginTop="0dp"
+            android:textAlignment="viewEnd"
+            android:text="RS.2632.50    "
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#6b0233"
+            android:text="Government subsidies/Rebates"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="0dp"
+            android:textAlignment="viewEnd"
+            android:textColor="#6b0233"
+            android:text="RS.659.92    "
+            android:textSize="16dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            android:textColor="#6b0233"
+            android:text="Amount Balance"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="0dp"
+            android:text="RS. 5020.92    "
+            android:textAlignment="viewEnd"
+            android:textColor="#6b0233"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textSize="18dp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
