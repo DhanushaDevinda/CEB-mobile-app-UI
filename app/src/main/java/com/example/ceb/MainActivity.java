@@ -153,6 +153,9 @@ public class MainActivity extends AppCompatActivity
         }else if (id == R.id.nav_electricity_acc) {
                 Intent intent = new Intent(MainActivity.this, HSubscribeAccActivity.class);
                 startActivity(intent);
+        }else if (id == R.id.nav_my_logout) {
+            Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
