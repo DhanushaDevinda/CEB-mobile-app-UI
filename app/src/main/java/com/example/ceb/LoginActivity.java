@@ -55,6 +55,8 @@ public class LoginActivity extends AppCompatActivity {
                 map.put("userName", userNameEdit.getText().toString());
                 map.put("password", passwordEdit.getText().toString());
 
+                System.out.println(map);
+
                 Call<LoginResults> call = retrofitInterface.executeLogin(map);
 
                 call.enqueue(new Callback<LoginResults>() {
@@ -62,8 +64,8 @@ public class LoginActivity extends AppCompatActivity {
                     public void onResponse(Call<LoginResults> call, Response<LoginResults> response) {
 
                         if(response.code() == 200){
-
-                            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            System.out.println("In code == 200");
+                            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                             startActivity(intent);
 
 

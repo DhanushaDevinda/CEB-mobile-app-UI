@@ -4,44 +4,26 @@ import com.google.gson.annotations.SerializedName;
 
 public class LoginResults {
 
-    private String name;
 
-    @SerializedName("email")
-    private  String email;
+    @SerializedName("userName")
+    private String userName;
 
-    private String is_change;
+    @SerializedName("password")
+    private  String password;
 
-    private String type;
-
-    public String getName() {
-        return name;
+    public String getUserName() {
+        return userName;
     }
 
-    public String getIs_change() {
-        return is_change;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public void setIs_change(String is_change) {
-        this.is_change = is_change;
+    public String getPassword() {
+        return password;
     }
 
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
