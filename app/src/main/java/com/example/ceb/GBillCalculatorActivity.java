@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
 import android.widget.Spinner;
 import android.widget.TextView;
 
 public class GBillCalculatorActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-    LinearLayout mainlayout;
+    LinearLayout days_layout;
+    LinearLayout units_per_day_layout;
+    LinearLayout units_layout;
     Spinner mySpinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,20 +23,21 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
 
         getSupportActionBar().setTitle("Bill Calculator");
 
-        mainlayout = (LinearLayout) this.findViewById(R.id.numberofunit);
+        days_layout = (LinearLayout) this.findViewById(R.id.number_of_days_layout);
+        units_per_day_layout = (LinearLayout) this.findViewById(R.id.number_of_units_per_day_layout);
+        units_layout = (LinearLayout) this.findViewById(R.id.num_of_units_layout);
+
+        days_layout.setVisibility(LinearLayout.GONE);
+        units_per_day_layout.setVisibility(LinearLayout.GONE);
+        units_layout.setVisibility(LinearLayout.VISIBLE);
+
         mySpinner = (Spinner) findViewById(R.id.spinner1);
-
-
-        mainlayout.setVisibility(LinearLayout.VISIBLE);
-
-
         mySpinner.setOnItemSelectedListener(this);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
         if(mySpinner.getSelectedItem().toString().equals("Domestic")){
-            //mainlayout.setVisibility(LinearLayout.VISIBLE);
             TextView price = (TextView)findViewById(R.id.tariff_price);
             price.setText("Rs.11.00");
         }if(mySpinner.getSelectedItem().toString().equals("Domestic TOU")){
@@ -55,7 +59,6 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
             TextView price = (TextView)findViewById(R.id.tariff_price);
             price.setText("Rs.51.00");
         }if(mySpinner.getSelectedItem().toString().equals("Select Type")) {
-            //mainlayout.setVisibility(LinearLayout.GONE);
             TextView price = (TextView)findViewById(R.id.tariff_price);
             price.setText("Rs.00.00");
         }
@@ -64,5 +67,25 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+
+    public void onRadioButtonClicked(View v)
+    {
+        boolean  checked = ((RadioButton) v).isChecked();
+
+        switch(v.getId()){
+            case R.id.daily:
+                if(checked)
+                    units_layout.setVisibility(LinearLayout.VISIBLE);
+                    days_layout.setVisibility(LinearLayout.GONE);
+                    units_per_day_layout.setVisibility(LinearLayout.GONE);
+                break;
+            case R.id.custom:
+                if(checked)
+                    units_layout.setVisibility(LinearLayout.GONE);
+                    days_layout.setVisibility(LinearLayout.VISIBLE);
+                    units_per_day_layout.setVisibility(LinearLayout.VISIBLE);
+                break;
+        }
     }
 }
