@@ -11,7 +11,8 @@
         <item>Meter burning</item>
         <item>Conductor burning</item>
     </string-array>
-    <string-array name="domestic">
+    <string-array name="tariff_types">
+        <item>Select Type</item>
         <item>Domestic</item>
         <item>Domestic TOU</item>
         <item>Industrial</item>

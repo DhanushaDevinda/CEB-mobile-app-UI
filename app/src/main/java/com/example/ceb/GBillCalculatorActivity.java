@@ -54,8 +54,10 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
         }if(mySpinner.getSelectedItem().toString().equals("Religious & Charity")){
             TextView price = (TextView)findViewById(R.id.tariff_price);
             price.setText("Rs.51.00");
-        }else {
-            mainlayout.setVisibility(LinearLayout.GONE);
+        }if(mySpinner.getSelectedItem().toString().equals("Select Type")) {
+            //mainlayout.setVisibility(LinearLayout.GONE);
+            TextView price = (TextView)findViewById(R.id.tariff_price);
+            price.setText("Rs.00.00");
         }
     }
 
