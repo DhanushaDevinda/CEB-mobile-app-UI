@@ -143,31 +143,39 @@
                 android:text="Number of days"
                 android:textSize="18sp"/>
 
-            <ImageView
-                android:id="@+id/plus1"
-                android:layout_width="40dp"
-                android:layout_marginTop="8dp"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_add_circle_black_24dp" />
-            <EditText
-                android:id="@+id/editText11115"
+
+            <Button
+                android:id="@+id/decrease1"
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:background="#6b0233"
+                android:textColor="#ffffff"
+                android:onClick="decrease_nod"
+                android:text="-" />
+            <TextView
+                android:id="@+id/no_of_days"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:background="@drawable/edit_text_border2"
-                android:ems="10"
-                android:hint=""
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:padding="10dp"
                 android:textSize="16dp"
-                tools:layout_editor_absoluteX="61dp"
-                tools:layout_editor_absoluteY="608dp" />
-
-            <ImageView
-                android:id="@+id/minus1"
-                android:layout_width="35dp"
-                android:layout_marginTop="8dp"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_remove_circle_black_24dp" />
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:text="0" />
+            <Button
+                android:id="@+id/increase1"
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="#6b0233"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:onClick="increase_nod"
+                android:text="+" />
         </LinearLayout>
 
         <LinearLayout
@@ -187,32 +195,38 @@
                 android:textColor="#6b0233"
                 android:textSize="18sp"/>
 
-            <ImageView
-                android:id="@+id/plus2"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:srcCompat="@drawable/ic_add_circle_black_24dp" />
-
-            <EditText
-                android:id="@+id/editText1115"
+            <Button
+                android:id="@+id/decrease2"
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:background="#6b0233"
+                android:textColor="#ffffff"
+                android:onClick="decrease_noupd"
+                android:text="-" />
+            <TextView
+                android:id="@+id/no_of_units_per_day"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:background="@drawable/edit_text_border2"
-                android:ems="10"
-                android:hint=""
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:padding="10dp"
                 android:textSize="16dp"
-                tools:layout_editor_absoluteX="61dp"
-                tools:layout_editor_absoluteY="608dp" />
-
-            <ImageView
-                android:id="@+id/minus2"
-                android:layout_width="35dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:srcCompat="@drawable/ic_remove_circle_black_24dp" />
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:text="0" />
+            <Button
+                android:id="@+id/increase2"
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="#6b0233"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:onClick="increase_noupd"
+                android:text="+" />
         </LinearLayout>
 
         <LinearLayout
@@ -232,32 +246,38 @@
                 android:textColor="#6b0233"
                 android:textSize="18sp"/>
 
-            <ImageView
-                android:id="@+id/plus3"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:srcCompat="@drawable/ic_add_circle_black_24dp" />
-
-            <EditText
-                android:id="@+id/minus3"
+            <Button
+                android:id="@+id/decrease3"
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:background="#6b0233"
+                android:textColor="#ffffff"
+                android:onClick="decrease_nou"
+                android:text="-" />
+            <TextView
+                android:id="@+id/no_of_units"
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:background="@drawable/edit_text_border2"
-                android:ems="10"
-                android:hint=""
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:padding="10dp"
                 android:textSize="16dp"
-                tools:layout_editor_absoluteX="61dp"
-                tools:layout_editor_absoluteY="608dp" />
-
-            <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="35dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                app:srcCompat="@drawable/ic_remove_circle_black_24dp" />
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:layout_gravity="center_horizontal"
+                android:text="0" />
+            <Button
+                android:id="@+id/increase3"
+                android:layout_width="100px"
+                android:layout_height="40dp"
+                android:background="#6b0233"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:onClick="increase_nou"
+                android:text="+" />
         </LinearLayout>
 
 

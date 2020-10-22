@@ -6,6 +6,7 @@ import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Spinner;
@@ -16,6 +17,10 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
     LinearLayout units_per_day_layout;
     LinearLayout units_layout;
     Spinner mySpinner;
+
+    int num_of_days = 0;
+    int num_of_units_per_day = 0;
+    int num_of_units = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +38,7 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
         units_per_day_layout.setVisibility(LinearLayout.GONE);
         units_layout.setVisibility(LinearLayout.VISIBLE);
         mySpinner.setOnItemSelectedListener(this);
+
     }
 
     @Override
@@ -72,6 +78,7 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
 
     }
 
+    //hide and visible layouts when radio button changes
     public void onRadioButtonClicked(View v)
     {
         boolean  checked = ((RadioButton) v).isChecked();
@@ -91,4 +98,56 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
                 break;
         }
     }
+
+    //increasing & decreasing value of number of days
+    public void increase_nod(View view) {
+        num_of_days = num_of_days + 1;
+        display_nod(num_of_days);
+    }
+    public void decrease_nod(View view) {
+        num_of_days--;
+        if(num_of_days < 0){
+            num_of_days = 0;
+        }
+        display_nod(num_of_days);
+    }
+    private void display_nod(int number) {
+        TextView value = (TextView) findViewById(R.id.no_of_days);
+        value.setText("" + number);
+    }
+
+    //increasing & decreasing value of number of units per day
+    public void increase_noupd(View view) {
+        num_of_units_per_day = num_of_units_per_day + 1;
+        display_noupd(num_of_units_per_day);
+    }
+    public void decrease_noupd(View view) {
+        num_of_units_per_day--;
+        if(num_of_units_per_day < 0){
+            num_of_units_per_day = 0;
+        }
+        display_noupd(num_of_units_per_day);
+    }
+    private void display_noupd(int number) {
+        TextView value = (TextView) findViewById(R.id.no_of_units_per_day);
+        value.setText("" + number);
+    }
+
+    //increasing & decreasing value of number of units
+    public void increase_nou(View view) {
+        num_of_units = num_of_units + 1;
+        display_nou(num_of_units);
+    }
+    public void decrease_nou(View view) {
+        num_of_units--;
+        if(num_of_units < 0){
+            num_of_units = 0;
+        }
+        display_nou(num_of_units);
+    }
+    private void display_nou(int number) {
+        TextView value = (TextView) findViewById(R.id.no_of_units);
+        value.setText("" + number);
+    }
+
 }
