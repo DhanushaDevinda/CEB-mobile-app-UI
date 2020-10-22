@@ -16,6 +16,7 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
     LinearLayout units_per_day_layout;
     LinearLayout units_layout;
     Spinner mySpinner;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,41 +27,43 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
         days_layout = (LinearLayout) this.findViewById(R.id.number_of_days_layout);
         units_per_day_layout = (LinearLayout) this.findViewById(R.id.number_of_units_per_day_layout);
         units_layout = (LinearLayout) this.findViewById(R.id.num_of_units_layout);
+        mySpinner = (Spinner) findViewById(R.id.spinner1);
 
         days_layout.setVisibility(LinearLayout.GONE);
         units_per_day_layout.setVisibility(LinearLayout.GONE);
         units_layout.setVisibility(LinearLayout.VISIBLE);
-
-        mySpinner = (Spinner) findViewById(R.id.spinner1);
         mySpinner.setOnItemSelectedListener(this);
     }
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+        TextView t_price = findViewById(R.id.tariff_price);
+        TextView f_charge = findViewById(R.id.fixed_charge);
+
         if(mySpinner.getSelectedItem().toString().equals("Domestic")){
-            TextView price = (TextView)findViewById(R.id.tariff_price);
-            price.setText("Rs.11.00");
+            t_price.setText("Rs."+getResources().getString(R.string.tariff_value, 11)+".00");
+            f_charge.setText("Rs."+getResources().getString(R.string.fixed_charge, 540)+".00");
         }if(mySpinner.getSelectedItem().toString().equals("Domestic TOU")){
-            TextView price = (TextView)findViewById(R.id.tariff_price);
-            price.setText("Rs.13.00");
+            t_price.setText("Rs."+getResources().getString(R.string.tariff_value, 13)+".00");
+            f_charge.setText("Rs."+getResources().getString(R.string.fixed_charge, 540)+".00");
         }if(mySpinner.getSelectedItem().toString().equals("Industrial")){
-            TextView price = (TextView)findViewById(R.id.tariff_price);
-            price.setText("Rs.21.00");
+            t_price.setText("Rs."+getResources().getString(R.string.tariff_value, 21)+".00");
+            f_charge.setText("Rs."+getResources().getString(R.string.fixed_charge, 600)+".00");
         }if(mySpinner.getSelectedItem().toString().equals("General")){
-            TextView price = (TextView)findViewById(R.id.tariff_price);
-            price.setText("Rs.31.00");
+            t_price.setText("Rs."+getResources().getString(R.string.tariff_value, 31)+".00");
+            f_charge.setText("Rs."+getResources().getString(R.string.fixed_charge, 240)+".00");
         }if(mySpinner.getSelectedItem().toString().equals("Government")){
-            TextView price = (TextView)findViewById(R.id.tariff_price);
-            price.setText("Rs.33.00");
+            t_price.setText("Rs."+getResources().getString(R.string.tariff_value, 33)+".00");
+            f_charge.setText("Rs."+getResources().getString(R.string.fixed_charge, 600)+".00");
         }if(mySpinner.getSelectedItem().toString().equals("Hotel")){
-            TextView price = (TextView)findViewById(R.id.tariff_price);
-            price.setText("Rs.41.00");
+            t_price.setText("Rs."+getResources().getString(R.string.tariff_value, 41)+".00");
+            f_charge.setText("Rs."+getResources().getString(R.string.fixed_charge, 600)+".00");
         }if(mySpinner.getSelectedItem().toString().equals("Religious & Charity")){
-            TextView price = (TextView)findViewById(R.id.tariff_price);
-            price.setText("Rs.51.00");
+            t_price.setText("Rs."+getResources().getString(R.string.tariff_value, 51)+".00");
+            f_charge.setText("Rs."+getResources().getString(R.string.fixed_charge, 30)+".00");
         }if(mySpinner.getSelectedItem().toString().equals("Select Type")) {
-            TextView price = (TextView)findViewById(R.id.tariff_price);
-            price.setText("Rs.00.00");
+            t_price.setText("Rs."+getResources().getString(R.string.tariff_value, 00)+".00");
+            f_charge.setText("Rs."+getResources().getString(R.string.fixed_charge, 00)+".00");
         }
     }
 
