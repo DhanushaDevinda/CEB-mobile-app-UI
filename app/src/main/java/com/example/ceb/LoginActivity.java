@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity {
                         if(response.code() == 200){
                             System.out.println("In code == 200");
                             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                            intent.putExtra("username", userNameEdit.getText().toString());
                             startActivity(intent);
 
 

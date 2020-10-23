@@ -30,7 +30,13 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        String username = "";
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            username = extras.getString("username");
+
+        }
 
         View acc = findViewById(R.id.aceess);
 
@@ -41,6 +47,7 @@ public class MainActivity extends AppCompatActivity
 
         View power = findViewById(R.id.power);
 
+        final String finalUsername = username;
         power.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,6 +77,7 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, SAccessByActivity.class);
+                intent.putExtra("username", finalUsername);
                 startActivity(intent);
             }
         });

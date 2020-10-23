@@ -14,7 +14,7 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/device"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
@@ -30,7 +30,7 @@
             tools:layout_editor_absoluteY="238dp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/qty"
             android:layout_width="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
@@ -46,7 +46,7 @@
             tools:layout_editor_absoluteY="364dp" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/hours"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
@@ -62,7 +62,7 @@
             tools:layout_editor_absoluteY="490dp" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/power"
             android:layout_width="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
@@ -122,39 +122,66 @@
                 android:padding="12dp" />
 
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="00dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="Appliance" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="Qty" />
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="h/day" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="P/W" />
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="kWh/Day" />
+
+
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="300dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/titile"
             android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView12"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:text="   Appliance               Qty            h/day          P/W         kWh/Day" />
 
-        <TextView
-            android:id="@+id/textView123"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="   CFL                             8               6.0               20               0.96" />
-
-        <TextView
-            android:id="@+id/textView121"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="   Rice Cooker              1               1.0               600             0.96" />
-
-        <TextView
-            android:id="@+id/textView1231"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="   Water Heater            1               0.5              1000            0.96" />
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
         </LinearLayout>
     </LinearLayout>
 

@@ -10,7 +10,7 @@
     tools:context=".HSubscriptionAccActivity">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/device"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -23,7 +23,7 @@
         tools:layout_editor_absoluteY="238dp" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/qty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -36,7 +36,7 @@
         tools:layout_editor_absoluteY="364dp" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/hours"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
