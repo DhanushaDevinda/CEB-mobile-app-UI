@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -48,7 +49,8 @@ public class propertyArrayAdapter extends ArrayAdapter<Property>{
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.simple_complaint_list, null);
 
-        View layout = view.findViewById(R.id.complaint);
+Button morebtn = view.findViewById(R.id.buttonmore);
+
 
          location = (TextView) view.findViewById(R.id.textViewLocation);
          complaintType = (TextView) view.findViewById(R.id.textViewComplaint);
@@ -67,7 +69,7 @@ public class propertyArrayAdapter extends ArrayAdapter<Property>{
         more.setText(property.getMore());
 
 
-        layout.setOnClickListener(new View.OnClickListener() {
+        morebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Context context = view.getContext();

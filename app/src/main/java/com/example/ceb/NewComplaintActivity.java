@@ -63,6 +63,9 @@ public class NewComplaintActivity extends AppCompatActivity implements AdapterVi
                 land = ETland.getText().toString();
                 more = ETmore.getText().toString();
 
+                if(ETland.getText().toString().isEmpty() ||ETmobile.getText().toString().isEmpty() ){
+                    ETland.setError("All filed required");
+                }else{
                 AlertDialog.Builder builder = new AlertDialog.Builder(NewComplaintActivity.this);
 
                 builder.setTitle("Complaint received Successfully");
@@ -89,6 +92,7 @@ public class NewComplaintActivity extends AppCompatActivity implements AdapterVi
                 AlertDialog alert = builder.create();
                 alert.show();
             }
+        }
         });
 
     }
