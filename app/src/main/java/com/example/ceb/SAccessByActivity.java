@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -85,7 +86,7 @@ public class SAccessByActivity extends AppCompatActivity {
             public void onResponse(Call<List<AccessByCensuModel>> call, Response<List<AccessByCensuModel>> response) {
 
                 if(response.code() == 200){
-
+                    System.out.println(response.body());
                     if(response.body() != null){
                         Adapter adapter = new Adapter(response.body());
                         recyclerView.setAdapter(adapter);
@@ -114,14 +115,51 @@ public class SAccessByActivity extends AppCompatActivity {
 
         access = findViewById(R.id.button6);
 
+        final String finalUsername = username;
         access.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast toast = Toast.makeText(getApplicationContext(),
-                        "Successfully added into the list",
-                        Toast.LENGTH_SHORT);
 
-                toast.show();
+                int quantity = Integer.parseInt(qty.getText().toString());
+                Double noOfHours = Double.parseDouble(hours.getText().toString());
+                Double powerInt = Double.parseDouble(power.getText().toString());
+
+
+                Double kwhDay = ((noOfHours * powerInt)/1000 ) * quantity;
+
+                HashMap<String ,String> map = new HashMap<>();
+                map.put("device", device.getText().toString());
+                map.put("qty", qty.getText().toString());
+                map.put("hours", hours.getText().toString());
+                map.put("power", power.getText().toString());
+                map.put("kDay", kwhDay.toString());
+
+                Call<AccessByCensuModel> call = retrofitInterface.executeAddAccess(map);
+
+                call.enqueue(new Callback<AccessByCensuModel>() {
+                    @Override
+                    public void onResponse(Call<AccessByCensuModel> call, Response<AccessByCensuModel> response) {
+
+                        if(response.code() == 200){
+
+                            Toast.makeText( getApplicationContext(), "Added to your List", Toast.LENGTH_LONG).show();
+                            Intent i = new Intent(getApplicationContext(), SAccessByActivity.class);
+                            i.putExtra("username", finalUsername);
+                            startActivity(i);
+
+                        } else if(response.code() == 404){
+                            Toast.makeText( getApplicationContext(), "You are Offline!!!", Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+
+                    @Override
+                    public void onFailure(Call<AccessByCensuModel> call, Throwable t) {
+
+                        Toast.makeText( getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
+                    }
+                });
+
             }
         });
     }

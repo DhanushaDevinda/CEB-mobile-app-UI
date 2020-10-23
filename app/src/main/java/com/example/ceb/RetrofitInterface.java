@@ -21,4 +21,7 @@ public interface RetrofitInterface {
     Call<List<AccessByCensuModel>> executegetAccess(@Body HashMap<String, String> map);
 
 
+    @POST("/addAccessByCensus")
+    Call<AccessByCensuModel> executeAddAccess(@Body HashMap<String, String> map);
+
 }

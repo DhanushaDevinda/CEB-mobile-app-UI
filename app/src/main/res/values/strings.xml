@@ -27,5 +27,6 @@
 
     <string name="tariff_value">%1$d</string>
     <string name="fixed_charge">%1$d</string>
+    <string name="appliance_device_name">Appliance(Device Name)</string>
 
 </resources>
