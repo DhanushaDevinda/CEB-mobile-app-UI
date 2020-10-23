@@ -2,11 +2,10 @@ package com.example.ceb;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ActionBar;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.Spinner;
@@ -21,6 +20,14 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
     int num_of_days = 0;
     int num_of_units_per_day = 0;
     int num_of_units = 0;
+
+    int tariff_price;
+    int selected_num_of_units;
+    int selected_num_of_days;
+    int selected_num_of_units_per_day;
+    int fixed_cost;
+    int usage_cost;
+    int total_cost;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -112,7 +119,7 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
         display_nod(num_of_days);
     }
     private void display_nod(int number) {
-        TextView value = (TextView) findViewById(R.id.no_of_days);
+        EditText value = (EditText) findViewById(R.id.no_of_days);
         value.setText("" + number);
     }
 
@@ -129,7 +136,7 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
         display_noupd(num_of_units_per_day);
     }
     private void display_noupd(int number) {
-        TextView value = (TextView) findViewById(R.id.no_of_units_per_day);
+        EditText value = (EditText) findViewById(R.id.no_of_units_per_day);
         value.setText("" + number);
     }
 
@@ -146,8 +153,242 @@ public class GBillCalculatorActivity extends AppCompatActivity implements Adapte
         display_nou(num_of_units);
     }
     private void display_nou(int number) {
-        TextView value = (TextView) findViewById(R.id.no_of_units);
+        EditText value = (EditText) findViewById(R.id.no_of_units);
         value.setText("" + number);
     }
 
+    //calculate usage price & total price
+    public void onCalculateButtonClicked(View view)
+    {
+        RadioButton daily_b = (RadioButton) findViewById(R.id.daily);
+        RadioButton custom_b = (RadioButton) findViewById(R.id.custom);
+
+        //Domestic
+        if(mySpinner.getSelectedItem().toString().equals("Domestic") && daily_b.isChecked()){
+            fixed_cost = 540;
+            tariff_price = 11;
+
+            EditText units = (EditText) findViewById(R.id.no_of_units);
+            selected_num_of_units = Integer.parseInt(units.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_units;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+        if(mySpinner.getSelectedItem().toString().equals("Domestic") && custom_b.isChecked()){
+            fixed_cost = 540;
+            tariff_price = 11;
+
+            EditText days = (EditText) findViewById(R.id.no_of_days);
+            selected_num_of_days = Integer.parseInt(days.getText().toString());
+
+            EditText units_per_day = (EditText) findViewById(R.id.no_of_units_per_day) ;
+            selected_num_of_units_per_day = Integer.parseInt(units_per_day.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_days * selected_num_of_units_per_day;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+
+        //Domestic TOU
+        if(mySpinner.getSelectedItem().toString().equals("Domestic TOU") && daily_b.isChecked()){
+            fixed_cost = 540;
+            tariff_price = 13;
+
+            EditText units = (EditText) findViewById(R.id.no_of_units);
+            selected_num_of_units = Integer.parseInt(units.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_units;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+        if(mySpinner.getSelectedItem().toString().equals("Domestic TOU") && custom_b.isChecked()){
+            fixed_cost = 540;
+            tariff_price = 13;
+
+            EditText days = (EditText) findViewById(R.id.no_of_days);
+            selected_num_of_days = Integer.parseInt(days.getText().toString());
+
+            EditText units_per_day = (EditText) findViewById(R.id.no_of_units_per_day) ;
+            selected_num_of_units_per_day = Integer.parseInt(units_per_day.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_days * selected_num_of_units_per_day;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+
+        //Industrial
+        if(mySpinner.getSelectedItem().toString().equals("Industrial") && daily_b.isChecked()){
+            fixed_cost = 600;
+            tariff_price = 21;
+
+            EditText units = (EditText) findViewById(R.id.no_of_units);
+            selected_num_of_units = Integer.parseInt(units.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_units;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+        if(mySpinner.getSelectedItem().toString().equals("Industrial") && custom_b.isChecked()){
+            fixed_cost = 600;
+            tariff_price = 21;
+
+            EditText days = (EditText) findViewById(R.id.no_of_days);
+            selected_num_of_days = Integer.parseInt(days.getText().toString());
+
+            EditText units_per_day = (EditText) findViewById(R.id.no_of_units_per_day);
+            selected_num_of_units_per_day = Integer.parseInt(units_per_day.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_days * selected_num_of_units_per_day;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+
+        //General
+        if(mySpinner.getSelectedItem().toString().equals("General") && daily_b.isChecked()){
+            fixed_cost = 240;
+            tariff_price = 31;
+
+            EditText units = (EditText) findViewById(R.id.no_of_units);
+            selected_num_of_units = Integer.parseInt(units.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_units;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+        if(mySpinner.getSelectedItem().toString().equals("General") && custom_b.isChecked()){
+            fixed_cost = 240;
+            tariff_price = 31;
+
+            EditText days = (EditText) findViewById(R.id.no_of_days);
+            selected_num_of_days = Integer.parseInt(days.getText().toString());
+
+            EditText units_per_day = (EditText) findViewById(R.id.no_of_units_per_day) ;
+            selected_num_of_units_per_day = Integer.parseInt(units_per_day.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_days * selected_num_of_units_per_day;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+
+        //Government
+        if(mySpinner.getSelectedItem().toString().equals("Government") && daily_b.isChecked()){
+            fixed_cost = 600;
+            tariff_price = 33;
+
+            EditText units = (EditText) findViewById(R.id.no_of_units);
+            selected_num_of_units = Integer.parseInt(units.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_units;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+        if(mySpinner.getSelectedItem().toString().equals("Government") && custom_b.isChecked()){
+            fixed_cost = 600;
+            tariff_price = 33;
+
+            EditText days = (EditText) findViewById(R.id.no_of_days);
+            selected_num_of_days = Integer.parseInt(days.getText().toString());
+
+            EditText units_per_day = (EditText) findViewById(R.id.no_of_units_per_day) ;
+            selected_num_of_units_per_day = Integer.parseInt(units_per_day.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_days * selected_num_of_units_per_day;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+
+        //Hotel
+        if(mySpinner.getSelectedItem().toString().equals("Hotel") && daily_b.isChecked()){
+            fixed_cost = 600;
+            tariff_price = 41;
+
+            EditText units = (EditText) findViewById(R.id.no_of_units);
+            selected_num_of_units = Integer.parseInt(units.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_units;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+        if(mySpinner.getSelectedItem().toString().equals("Hotel") && custom_b.isChecked()){
+            fixed_cost = 600;
+            tariff_price = 41;
+
+            EditText days = (EditText) findViewById(R.id.no_of_days);
+            selected_num_of_days = Integer.parseInt(days.getText().toString());
+
+            EditText units_per_day = (EditText) findViewById(R.id.no_of_units_per_day) ;
+            selected_num_of_units_per_day = Integer.parseInt(units_per_day.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_days * selected_num_of_units_per_day;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+
+        //Religious & Charity
+        if(mySpinner.getSelectedItem().toString().equals("Religious & Charity") && daily_b.isChecked()){
+            fixed_cost = 30;
+            tariff_price = 51;
+
+            EditText units = (EditText) findViewById(R.id.no_of_units);
+            selected_num_of_units = Integer.parseInt(units.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_units;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+        if(mySpinner.getSelectedItem().toString().equals("Religious & Charity") && custom_b.isChecked()){
+            fixed_cost = 30;
+            tariff_price = 51;
+
+            EditText days = (EditText) findViewById(R.id.no_of_days);
+            selected_num_of_days = Integer.parseInt(days.getText().toString());
+
+            EditText units_per_day = (EditText) findViewById(R.id.no_of_units_per_day) ;
+            selected_num_of_units_per_day = Integer.parseInt(units_per_day.getText().toString());
+
+            usage_cost = tariff_price * selected_num_of_days * selected_num_of_units_per_day;
+            display_uc(usage_cost);
+
+            total_cost = usage_cost + fixed_cost;
+            display_tc(total_cost);
+        }
+
+    }
+
+    public void display_uc(int number){
+        TextView value = (TextView) findViewById(R.id.usage_charge);
+        value.setText("Rs."+number+".00");
+    }
+
+    public void display_tc(int number){
+        TextView value = (TextView) findViewById(R.id.total_charge);
+        value.setText("Rs."+number+".00");
+    }
 }
