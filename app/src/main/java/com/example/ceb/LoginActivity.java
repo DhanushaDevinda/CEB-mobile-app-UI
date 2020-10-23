@@ -57,11 +57,11 @@ public class LoginActivity extends AppCompatActivity {
 
                 System.out.println(map);
 
-                Call<LoginResults> call = retrofitInterface.executeLogin(map);
+                Call<Void> call = retrofitInterface.executeLogin(map);
 
-                call.enqueue(new Callback<LoginResults>() {
+                call.enqueue(new Callback<Void>() {
                     @Override
-                    public void onResponse(Call<LoginResults> call, Response<LoginResults> response) {
+                    public void onResponse(Call<Void> call, Response<Void> response) {
 
                         if(response.code() == 200){
                             System.out.println("In code == 200");
@@ -76,7 +76,7 @@ public class LoginActivity extends AppCompatActivity {
                     }
 
                     @Override
-                    public void onFailure(Call<LoginResults> call, Throwable t) {
+                    public void onFailure(Call<Void> call, Throwable t) {
 
                         Toast.makeText( getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
                     }

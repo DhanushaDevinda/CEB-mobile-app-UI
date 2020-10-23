@@ -98,7 +98,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:text="Don't have an account? Register"
-            android:textColor="#6b0233"
+            android:textColor="#2196F3"
             android:textSize="12dp" />
 
         <TextView
