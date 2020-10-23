@@ -8,245 +8,252 @@
     tools:context=".NewComplaintActivity">
 
 
-    <TextView
-        android:id="@+id/textView5"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/titile"
-        android:padding="15dp"
-        android:text="Complaint Location"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="144dp" />
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:orientation="horizontal">
-
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="200dp"
-            android:textColor="#6b0233"
-            android:layout_height="wrap_content"
-            android:text="Electricity Account"
-            tools:layout_editor_absoluteX="95dp"
-            tools:layout_editor_absoluteY="293dp" />
-
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="200dp"
-            android:textColor="#6b0233"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Show on Map"
-            tools:layout_editor_absoluteX="95dp"
-            tools:layout_editor_absoluteY="293dp" />
-    </LinearLayout>
-
-    <Spinner
-        android:id="@+id/spinner1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:entries="@array/selectAcc"
-        android:padding="15dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="386dp" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/titile"
-        android:padding="15dp"
-        android:text="Complaint"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="144dp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:entries="@array/compalintType"
-        android:padding="15dp"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="386dp" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/titile"
-        android:padding="15dp"
-        android:text="Contact Details"
-        tools:layout_editor_absoluteX="116dp"
-        tools:layout_editor_absoluteY="144dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="10dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView7"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#6b0233"
-            android:text="   Mobile Phone Number" />
-
-        <EditText
-            android:id="@+id/editText125"
-            android:layout_width="220dp"
-            android:layout_height="40dp"
-            android:background="@drawable/edit_text_border2"
-            android:ems="10"
-            android:hint=""
-            android:inputType="textPersonName"
-            android:padding="12dp"
-            android:textSize="16dp"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="608dp" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="4dp"
-        android:orientation="horizontal">
-
-        <TextView
-            android:id="@+id/textView71"
-            android:layout_width="150dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:textColor="#6b0233"
-            android:text="   Land Phone Number" />
-
-        <EditText
-            android:id="@+id/editText15"
-            android:layout_width="220dp"
-            android:layout_height="40dp"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/edit_text_border2"
-            android:ems="10"
-            android:hint=""
-            android:inputType="textPersonName"
-            android:padding="12dp"
-            android:textSize="16dp"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="608dp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/titile"
-        android:padding="15dp"
-        android:text="Attachments"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="556dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginBottom="5dp"
-        android:layout_marginRight="10dp"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/power"
-            android:layout_width="170dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="5dp"
-            android:background="@drawable/edit_text_border2"
-            android:ems="10"
-
-            android:hint="Anything more to tell?"
-            android:inputType="textPersonName"
-            android:padding="12dp"
-            android:textSize="16dp"
-            tools:layout_editor_absoluteX="61dp"
-            tools:layout_editor_absoluteY="608dp" />
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/rounded_corners2"
-            android:text="Edit"
-            android:textColor="#ffffff" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="90dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
-            android:background="@drawable/rounded_corners2"
-            android:text="Delete"
-            android:textColor="#ffffff" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="170dp"
-        android:layout_height="40dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/rounded_corners2"
-        android:text="Lodge Complaint"
-        android:textColor="#ffffff" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:background="@drawable/background"
-        android:orientation="vertical"
-        android:padding="10dp">
-
-        <TextView
-            android:id="@+id/textView90"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:text="Note"
-            android:textColor="#6b0233"
-            android:textSize="18dp"
-            tools:layout_editor_absoluteX="116dp"
-            tools:layout_editor_absoluteY="144dp" />
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/textView91"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:textColor="#6b0233"
-            android:text="You can not lodge complaint while having another processing complaint. you will be notified while complaint is in process" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/titile"
+                android:padding="15dp"
+                android:text="Complaint Location"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="144dp" />
 
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="14dp"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:id="@+id/radioButtonEleAcc"
+                    android:layout_width="200dp"
+                    android:textColor="#6b0233"
+                    android:layout_height="wrap_content"
+                    android:text="Electricity Account"
+                    tools:layout_editor_absoluteX="95dp"
+                    tools:layout_editor_absoluteY="293dp"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/radioButtonShow"
+                    android:layout_width="200dp"
+                    android:textColor="#6b0233"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:text="Show on Map"
+                    tools:layout_editor_absoluteX="95dp"
+                    tools:layout_editor_absoluteY="293dp"
+                    android:onClick="onRadioButtonClicked"/>
+
+            </RadioGroup>
+
+            <Spinner
+                android:id="@+id/spinnerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/selectAcc"
+                android:padding="15dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/titile"
+                android:padding="15dp"
+                android:text="Complaint"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <Spinner
+                android:id="@+id/spinnerType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:entries="@array/compalintType"
+                android:padding="15dp"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="386dp" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/titile"
+                android:padding="15dp"
+                android:text="Contact Details"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#6b0233"
+                    android:text="   Mobile Phone Number" />
+
+                <EditText
+                    android:id="@+id/editTextMobile"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/edit_text_border2"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:padding="12dp"
+                    android:textSize="16dp"
+                    tools:layout_editor_absoluteX="61dp"
+                    tools:layout_editor_absoluteY="608dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#6b0233"
+                    android:text="   Land Phone Number" />
+
+                <EditText
+                    android:id="@+id/editTextLand"
+                    android:layout_width="220dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_text_border2"
+                    android:ems="10"
+                    android:hint=""
+                    android:inputType="phone"
+                    android:padding="12dp"
+                    android:textSize="16dp"
+                    tools:layout_editor_absoluteX="61dp"
+                    tools:layout_editor_absoluteY="608dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/titile"
+                android:padding="15dp"
+                android:text="Attachments"
+                tools:layout_editor_absoluteX="225dp"
+                tools:layout_editor_absoluteY="556dp" />
+
+
+
+            <EditText
+                android:id="@+id/editTextMore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Anything more to tell?"
+                android:padding="12dp"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:inputType="textMultiLine"
+                android:background="@drawable/edit_text_border2"/>
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="170dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/rounded_corners2"
+                android:text="Lodge Complaint"
+                android:textColor="#ffffff" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/background"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/textView90"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:text="Note"
+                    android:textColor="#6b0233"
+                    android:textSize="18dp"
+                    tools:layout_editor_absoluteX="116dp"
+                    tools:layout_editor_absoluteY="144dp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#6b0233"
+                    android:text="You can not lodge complaint while having another" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#6b0233"
+                    android:text="processing complaint. you will be notified while complaint" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="#6b0233"
+                    android:text="is in process" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
