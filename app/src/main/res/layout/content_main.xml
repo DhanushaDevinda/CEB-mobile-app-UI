@@ -39,7 +39,8 @@
                     android:orientation="horizontal"
                     android:paddingTop="10dp"
                     android:paddingRight="20dp"
-                    android:paddingBottom="5dp">
+                    android:paddingBottom="5dp"
+                    android:gravity="center">
 
 
                     <ImageView
@@ -118,7 +119,8 @@
                     android:orientation="horizontal"
                     android:paddingTop="20dp"
                     android:paddingRight="10dp"
-                    android:paddingBottom="10dp">
+                    android:paddingBottom="10dp"
+                    android:gravity="center">
 
 
                     <ImageView
@@ -143,7 +145,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="Assess by cencses"
+                            android:text="Assess by census"
                             android:textColor="#000000"
                             android:textSize="20dp" />
 
@@ -173,14 +175,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/titile"
                     android:orientation="horizontal"
                     android:paddingTop="20dp"
                     android:paddingRight="20dp"
-                    android:paddingBottom="20dp">
+                    android:paddingBottom="20dp"
+                    android:gravity="center">
 
 
                     <ImageView
@@ -238,14 +241,15 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/titile"
                     android:orientation="horizontal"
                     android:paddingTop="20dp"
                     android:paddingRight="10dp"
-                    android:paddingBottom="20dp">
+                    android:paddingBottom="20dp"
+                    android:gravity="center">
 
 
                     <ImageView
@@ -304,7 +308,7 @@
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/titile"
@@ -312,7 +316,8 @@
                     android:paddingTop="20dp"
                     android:paddingRight="20dp"
                     android:paddingLeft="10dp"
-                    android:paddingBottom="20dp">
+                    android:paddingBottom="20dp"
+                    android:gravity="center">
 
 
                     <ImageView
@@ -321,15 +326,36 @@
                         android:layout_height="59dp"
                         app:srcCompat="@drawable/news" />
 
-                    <TextView
-                        android:id="@+id/textView51"
-                        android:layout_width="wrap_content"
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
+
                         android:layout_marginRight="10dp"
-                        android:text="CEB News"
-                        android:textColor="#000000"
-                        android:textSize="20dp" />
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/titile"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="CEB News"
+                            android:textColor="#000000"
+                            android:textSize="20dp" />
+
+                        <TextView
+                            android:id="@+id/textView52"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="See our latest news"
+                            android:textSize="14dp" />
+                    </LinearLayout>
+
                 </LinearLayout>
 
             </LinearLayout>
