@@ -48,7 +48,7 @@
                 android:padding="13dp"
                 android:textAlignment="center"
                 android:textColor="#6b0233"
-                android:textColorHint="#6b0233"
+                android:textColorHint="#888888"
                 android:textSize="16dp"
                 tools:layout_editor_absoluteX="99dp"
                 tools:layout_editor_absoluteY="449dp" />
@@ -66,7 +66,7 @@
                 android:padding="13dp"
                 android:textAlignment="center"
                 android:textColor="#6b0233"
-                android:textColorHint="#6b0233"
+                android:textColorHint="#888888"
                 android:textSize="16dp"
                 tools:layout_editor_absoluteX="99dp"
                 tools:layout_editor_absoluteY="449dp" />
@@ -84,7 +84,7 @@
                 android:padding="13dp"
                 android:textAlignment="center"
                 android:textColor="#6b0233"
-                android:textColorHint="#6b0233"
+                android:textColorHint="#888888"
                 android:textSize="16dp"
                 tools:layout_editor_absoluteX="99dp"
                 tools:layout_editor_absoluteY="449dp" />
@@ -102,7 +102,7 @@
                 android:padding="13dp"
                 android:textAlignment="center"
                 android:textColor="#6b0233"
-                android:textColorHint="#6b0233"
+                android:textColorHint="#888888"
                 android:textSize="16dp"
                 tools:layout_editor_absoluteX="99dp"
                 tools:layout_editor_absoluteY="449dp" />
@@ -120,7 +120,7 @@
                 android:padding="13dp"
                 android:textAlignment="center"
                 android:textColor="#6b0233"
-                android:textColorHint="#6b0233"
+                android:textColorHint="#888888"
                 android:textSize="16dp"
                 tools:layout_editor_absoluteX="99dp"
                 tools:layout_editor_absoluteY="449dp" />
@@ -138,7 +138,7 @@
                 android:padding="13dp"
                 android:textAlignment="center"
                 android:textColor="#6b0233"
-                android:textColorHint="#6b0233"
+                android:textColorHint="#888888"
                 android:textSize="16dp"
                 tools:layout_editor_absoluteX="99dp"
                 tools:layout_editor_absoluteY="449dp" />
@@ -156,7 +156,7 @@
                 android:padding="13dp"
                 android:textAlignment="center"
                 android:textColor="#6b0233"
-                android:textColorHint="#6b0233"
+                android:textColorHint="#888888"
                 android:textSize="16dp"
                 tools:layout_editor_absoluteX="99dp"
                 tools:layout_editor_absoluteY="449dp" />

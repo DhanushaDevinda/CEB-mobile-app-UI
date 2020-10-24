@@ -56,7 +56,25 @@ public class RegistrationActivity extends AppCompatActivity {
                 //   System.out.println(passwordEdit.getText().toString());
                 //   System.out.println(confirmPasswordEdit.getText().toString());
 
-
+                if(nameEdit.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext() , "Please Enter Name", Toast.LENGTH_LONG).show();
+                }
+                else if(emailEdit.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext() , "Please Enter Email", Toast.LENGTH_LONG).show();
+                }
+                else if(nicEdit.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext() , "Please Enter NIC No", Toast.LENGTH_LONG).show();
+                }
+                else if(phoneNoEdit.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext() , "Please Enter Mobile No", Toast.LENGTH_LONG).show();
+                }
+                else if(UserNameEdit.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext() , "Please Enter User name", Toast.LENGTH_LONG).show();
+                }
+                else if(passwordEdit.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext() , "Please Enter Password", Toast.LENGTH_LONG).show();
+                }
+                else {
                     if(passwordEdit.getText().toString().equals(confirmPasswordEdit.getText().toString()) ){
                         HashMap<String ,String> map = new HashMap<>();
                         map.put("name", nameEdit.getText().toString());
@@ -80,7 +98,7 @@ public class RegistrationActivity extends AppCompatActivity {
                                     startActivity(intent);
 
                                 } else if(response.code() == 400){
-                                    Toast.makeText(getApplicationContext() , "Already Registered", Toast.LENGTH_LONG).show();
+                                    Toast.makeText(getApplicationContext() , "User Name Already Exits", Toast.LENGTH_LONG).show();
                                 }
 
 
@@ -96,6 +114,8 @@ public class RegistrationActivity extends AppCompatActivity {
                     } else {
                         Toast.makeText(getApplicationContext() , "Confirm Password Does Not Match!!!", Toast.LENGTH_LONG).show();
                     }
+
+                }
 
 
 
