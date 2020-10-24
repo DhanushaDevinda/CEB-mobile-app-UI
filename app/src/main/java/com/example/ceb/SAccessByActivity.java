@@ -6,14 +6,18 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.ceb.Model.AccessByCensuModel;
 import com.example.ceb.adapter.Adapter;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
@@ -37,6 +41,12 @@ public class SAccessByActivity extends AppCompatActivity {
     private EditText hours;
     private EditText power;
 
+    private int noOFDAYS = 0;
+    private double unitPerDay = 0;
+    TextView unitPerDayText;
+    TextView unitPerPeriodText;
+    EditText noOfDayTxt;
+
     Button access;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +59,9 @@ public class SAccessByActivity extends AppCompatActivity {
         qty = findViewById(R.id.qty);
         hours = findViewById(R.id.hours);
         power = findViewById(R.id.power);
-
+        unitPerDayText = findViewById(R.id.unitPerDayText);
+        unitPerPeriodText = findViewById(R.id.unitPerPeriodText);
+        noOfDayTxt = findViewById(R.id.noOfDayTxt);
 
         String username = "";
 
@@ -86,12 +98,26 @@ public class SAccessByActivity extends AppCompatActivity {
             public void onResponse(Call<List<AccessByCensuModel>> call, Response<List<AccessByCensuModel>> response) {
 
                 if(response.code() == 200){
+
+
+
                     System.out.println(response.body());
+                    List<AccessByCensuModel> list = new ArrayList<AccessByCensuModel>();
+                    list = response.body();
+                    System.out.println(list);
                     if(response.body() != null){
                         Adapter adapter = new Adapter(response.body());
                         recyclerView.setAdapter(adapter);
 
                         adapter.notifyDataSetChanged();
+
+                        for (AccessByCensuModel arrlist : list) {
+
+                            unitPerDay = unitPerDay + Double.parseDouble(arrlist.getkDay());
+                        }
+                        noOFDAYS = Integer.parseInt(noOfDayTxt.getText().toString());
+                        calculateNoOfUnits();
+
                     }
                     else {
                         Toast.makeText( getApplicationContext(), "No Items in the List", Toast.LENGTH_LONG).show();
@@ -132,7 +158,7 @@ public class SAccessByActivity extends AppCompatActivity {
                 map.put("qty", qty.getText().toString());
                 map.put("hours", hours.getText().toString());
                 map.put("power", power.getText().toString());
-                map.put("kDay", kwhDay.toString());
+                map.put("kDay", String.format("%.2f", kwhDay));
 
                 Call<AccessByCensuModel> call = retrofitInterface.executeAddAccess(map);
 
@@ -162,5 +188,36 @@ public class SAccessByActivity extends AppCompatActivity {
 
             }
         });
+
+
+        noOfDayTxt.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+
+                noOFDAYS = Integer.parseInt(noOfDayTxt.getText().toString());
+                calculateNoOfUnits();
+            }
+        });
+
+    }
+
+
+    public void calculateNoOfUnits(){
+
+
+        double unitperPeriod = unitPerDay * noOFDAYS;
+        unitPerDayText.setText(String.valueOf( String.format("%.2f", unitPerDay)) );
+        unitPerPeriodText.setText(String.valueOf(String.format("%.2f", unitperPeriod) ) );
+
     }
 }

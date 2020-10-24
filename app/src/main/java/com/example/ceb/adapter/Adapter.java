@@ -3,7 +3,6 @@ package com.example.ceb.adapter;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -30,6 +29,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.Viewholder> {
     public Viewholder onCreateViewHolder(@NonNull ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.accessby_cen_layout, viewGroup, false);
         return new Viewholder(view);
+
+
+
+
+
     }
 
     @Override

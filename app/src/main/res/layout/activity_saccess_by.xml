@@ -56,7 +56,7 @@
             android:background="@drawable/edit_text_border2"
             android:ems="10"
             android:hint="Hours used per day"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:padding="12dp"
             tools:layout_editor_absoluteX="136dp"
             tools:layout_editor_absoluteY="490dp" />
@@ -72,7 +72,7 @@
             android:background="@drawable/edit_text_border2"
             android:ems="10"
             android:hint="Power/wait"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:padding="12dp"
             tools:layout_editor_absoluteX="61dp"
             tools:layout_editor_absoluteY="608dp" />
@@ -108,7 +108,7 @@
                 android:text="No of Days Per Period" />
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/noOfDayTxt"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_width="150dp"
@@ -118,7 +118,7 @@
                 android:ems="10"
                 android:text="30"
                 android:textColor="#6b0233"
-                android:inputType="textPersonName"
+                android:inputType="number"
                 android:padding="12dp" />
 
         </LinearLayout>
@@ -132,14 +132,14 @@
 
             <TextView
                 android:id="@+id/textView8"
-                android:layout_width="230dp"
+                android:layout_width="215dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#6b0233"
                 android:text="Appliance" />
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#6b0233"
@@ -153,18 +153,25 @@
                 android:text="h/day" />
             <TextView
                 android:id="@+id/textView11"
-                android:layout_width="180dp"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#6b0233"
                 android:text="P/W" />
             <TextView
                 android:id="@+id/textView13"
-                android:layout_width="180dp"
+                android:layout_width="160dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#6b0233"
                 android:text="kWh/Day" />
+            <TextView
+                android:id="@+id/editbtn"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:text="" />
 
 
 
@@ -191,26 +198,64 @@
         android:layout_marginTop="0dp"
         android:background="@drawable/background"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/background"
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <TextView
                 android:id="@+id/textView12311"
-                android:layout_width="match_parent"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:textColor="#6b0233"
+                android:textSize="16dp"
                 android:layout_marginRight="5dp"
-                android:text="Usage charge                                                                1.26        Fixed Charge                                                                 4.17" />
+                android:text="Unit Per Day :" />
+            <TextView
+                android:id="@+id/unitPerDayText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="16dp"
+                android:textColor="#6b0233"
+                android:layout_marginRight="5dp"
+                android:text="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/background"
+            android:orientation="horizontal"
+            android:padding="5dp">
 
             <TextView
-                android:id="@+id/textView12312"
-                android:layout_width="match_parent"
-                android:layout_height="58dp"
+                android:id="@+id/textView045"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
                 android:textColor="#6b0233"
-                android:text="Total Charge                    Rs. 2450.00"
-                android:textSize="22dp" />
+                android:textSize="18dp"
+                android:layout_marginRight="5dp"
+                android:text="Unit Per Period :" />
+            <TextView
+                android:id="@+id/unitPerPeriodText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:textColor="#6b0233"
+                android:layout_marginRight="5dp"
+                android:text="0" />
 
+        </LinearLayout>
 
 </LinearLayout></LinearLayout>

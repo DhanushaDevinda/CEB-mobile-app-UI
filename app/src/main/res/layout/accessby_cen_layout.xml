@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="28dp">
@@ -16,7 +17,7 @@
 
         <TextView
             android:id="@+id/devicetxt"
-            android:layout_width="140dp"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="#6b0233"
@@ -44,11 +45,19 @@
             android:text="P/W" />
         <TextView
             android:id="@+id/kDayTxt"
-            android:layout_width="80dp"
+            android:layout_width="70dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textColor="#6b0233"
-            android:text="kWh/Day" />
+            android:paddingRight="10dp"
+            android:text="kWh" />
+        <ImageView
+            android:id="@+id/editImgBtn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@android:drawable/ic_menu_edit" />
+
         <TextView
             android:id="@+id/textid"
             android:layout_width="10dp"
@@ -56,6 +65,7 @@
             android:layout_weight="1"
             android:textColor="#6b0233"
             android:text="" />
+
 
 
 

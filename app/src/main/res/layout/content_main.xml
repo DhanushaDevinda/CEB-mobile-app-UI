@@ -74,7 +74,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:layout_marginRight="10dp"
-                            android:text="2020-08-22 16:41:12"
+                            android:text="2020-10-25 14:41:12"
                             android:textSize="14dp" />
 
                         <TextView
@@ -233,7 +233,7 @@
                 android:background="@drawable/titile"
                 android:orientation="vertical"
                 android:paddingTop="5dp"
-                android:paddingRight="20dp"
+                android:paddingRight="0dp"
                 android:paddingBottom="20dp">
 
                 <LinearLayout
@@ -244,7 +244,7 @@
                     android:background="@drawable/titile"
                     android:orientation="horizontal"
                     android:paddingTop="20dp"
-                    android:paddingRight="20dp"
+                    android:paddingRight="10dp"
                     android:paddingBottom="20dp">
 
 
