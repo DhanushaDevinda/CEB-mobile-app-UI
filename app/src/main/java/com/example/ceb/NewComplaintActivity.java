@@ -68,7 +68,7 @@ public class NewComplaintActivity extends AppCompatActivity implements AdapterVi
                 }else{
                 AlertDialog.Builder builder = new AlertDialog.Builder(NewComplaintActivity.this);
 
-                builder.setTitle("Complaint received Successfully");
+                builder.setTitle("Success");
                 builder.setMessage("Your complaint received Successfully!");
 
                 builder.setPositiveButton("CLOSE", new DialogInterface.OnClickListener() {
