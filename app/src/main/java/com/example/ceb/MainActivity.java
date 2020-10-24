@@ -1,6 +1,7 @@
 package com.example.ceb;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity
 
         View power = findViewById(R.id.power);
 
+        View news = findViewById(R.id.news);
+
         final String finalUsername = username;
         power.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,6 +84,15 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+        news.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://ceb.lk/"));
+                startActivity(browserIntent);
+            }
+        });
+
         Toolbar toolbar = findViewById(R.id.toolbar);
 
         setSupportActionBar(toolbar);
