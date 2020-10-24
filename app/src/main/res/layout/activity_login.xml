@@ -115,7 +115,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center|bottom"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="120dp"
             android:text="CEB Care 1.0.8 © 2020"
             android:textColor="#6b0233"
             android:textSize="12dp" />
