@@ -12,10 +12,7 @@
             android:id="@+id/nav_complaints"
             android:icon="@drawable/ic_error_black_24dp"
             android:title="@string/menu_complaints" />
-        <item
-            android:id="@+id/nav_outage_map"
-            android:icon="@drawable/ic_map_black_24dp"
-            android:title="@string/menu_outage" />
+
         <item
             android:id="@+id/nav_interruption"
             android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
@@ -46,15 +43,8 @@
                 android:id="@+id/nav_electricity_acc"
                 android:icon="@drawable/ic_filter_none_black_24dp"
                 android:title="@string/menu_account" />
-            <item
-                android:id="@+id/nav_my_profile"
-                android:icon="@drawable/ic_person_black_24dp"
-                android:title="@string/menu_profile" />
 
-            <item
-                android:id="@+id/nav_my_about"
-                android:icon="@drawable/ic_error_outline_black_24dp"
-                android:title="@string/menu_about" />
+
 
             <item
                 android:id="@+id/nav_my_logout"

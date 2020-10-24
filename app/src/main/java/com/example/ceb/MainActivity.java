@@ -156,9 +156,7 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_complaints) {
             Intent intent = new Intent(MainActivity.this, NewComplaintActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_outage_map) {
-
-        } else if (id == R.id.nav_bill_payment) {
+        }else if (id == R.id.nav_bill_payment) {
             Intent intent = new Intent(MainActivity.this, HPaymentActivity.class);
             startActivity(intent);
         }else if (id == R.id.nav_interruption) {
