@@ -146,45 +146,53 @@ public class SAccessByActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                int quantity = Integer.parseInt(qty.getText().toString());
-                Double noOfHours = Double.parseDouble(hours.getText().toString());
-                Double powerInt = Double.parseDouble(power.getText().toString());
+                if(!qty.getText().toString().equals("") && !device.getText().toString().equals("") && !hours.getText().toString().equals("") && !power.getText().toString().equals(""))
+                {
+                    int quantity = Integer.parseInt(qty.getText().toString());
+                    Double noOfHours = Double.parseDouble(hours.getText().toString());
+                    Double powerInt = Double.parseDouble(power.getText().toString());
 
 
-                Double kwhDay = ((noOfHours * powerInt)/1000 ) * quantity;
+                    Double kwhDay = ((noOfHours * powerInt)/1000 ) * quantity;
 
-                HashMap<String ,String> map = new HashMap<>();
-                map.put("device", device.getText().toString());
-                map.put("qty", qty.getText().toString());
-                map.put("hours", hours.getText().toString());
-                map.put("power", power.getText().toString());
-                map.put("kDay", String.format("%.2f", kwhDay));
+                    HashMap<String ,String> map = new HashMap<>();
+                    map.put("device", device.getText().toString());
+                    map.put("qty", qty.getText().toString());
+                    map.put("hours", hours.getText().toString());
+                    map.put("power", power.getText().toString());
+                    map.put("kDay", String.format("%.2f", kwhDay));
 
-                Call<AccessByCensuModel> call = retrofitInterface.executeAddAccess(map);
+                    Call<AccessByCensuModel> call = retrofitInterface.executeAddAccess(map);
 
-                call.enqueue(new Callback<AccessByCensuModel>() {
-                    @Override
-                    public void onResponse(Call<AccessByCensuModel> call, Response<AccessByCensuModel> response) {
+                    call.enqueue(new Callback<AccessByCensuModel>() {
+                        @Override
+                        public void onResponse(Call<AccessByCensuModel> call, Response<AccessByCensuModel> response) {
 
-                        if(response.code() == 200){
+                            if(response.code() == 200){
 
-                            Toast.makeText( getApplicationContext(), "Added to your List", Toast.LENGTH_LONG).show();
-                            Intent i = new Intent(getApplicationContext(), SAccessByActivity.class);
-                            i.putExtra("username", finalUsername);
-                            startActivity(i);
+                                Toast.makeText( getApplicationContext(), "Added to your List", Toast.LENGTH_LONG).show();
+                                Intent i = new Intent(getApplicationContext(), SAccessByActivity.class);
+                                i.putExtra("username", finalUsername);
+                                startActivity(i);
 
-                        } else if(response.code() == 404){
-                            Toast.makeText( getApplicationContext(), "You are Offline!!!", Toast.LENGTH_LONG).show();
+                            } else if(response.code() == 404){
+                                Toast.makeText( getApplicationContext(), "You are Offline!!!", Toast.LENGTH_LONG).show();
+                            }
+
                         }
 
-                    }
+                        @Override
+                        public void onFailure(Call<AccessByCensuModel> call, Throwable t) {
 
-                    @Override
-                    public void onFailure(Call<AccessByCensuModel> call, Throwable t) {
+                            Toast.makeText( getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
+                        }
+                    });
+                }
+                else {
 
-                        Toast.makeText( getApplicationContext(), t.getMessage(), Toast.LENGTH_LONG).show();
-                    }
-                });
+                    Toast.makeText( getApplicationContext(), "Please Fill all Records", Toast.LENGTH_LONG).show();
+                }
+
 
             }
         });
@@ -204,8 +212,12 @@ public class SAccessByActivity extends AppCompatActivity {
             @Override
             public void afterTextChanged(Editable editable) {
 
-                noOFDAYS = Integer.parseInt(noOfDayTxt.getText().toString());
-                calculateNoOfUnits();
+                if(!noOfDayTxt.getText().toString().equals("")){
+
+                    noOFDAYS = Integer.parseInt(noOfDayTxt.getText().toString());
+                    calculateNoOfUnits();
+                }
+
             }
         });
 
