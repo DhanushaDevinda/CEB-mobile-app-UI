@@ -1,46 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".InteruptionCalActivity">
 
-
-    <CalendarView
-        android:id="@+id/calendarView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <DatePicker
+        android:id="@+id/calendar_date_picker"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
-        android:background="@drawable/background"
-        android:orientation="vertical"
-        android:padding="10dp">
+        android:layout_gravity="center"
+        android:layout_marginTop="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleX="1.1"
+        android:scaleY="1.1"/>
 
-        <TextView
-            android:id="@+id/textView90"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/cal_btn"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="23dp"
+            android:background="@drawable/rounded_corners2"
+            android:gravity="center"
+            android:text="See Details"
+            android:textColor="#ffffff" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:text="2020 -10-12"
-            android:textColor="#ffffff"
-            android:textSize="18dp"
-            tools:layout_editor_absoluteX="116dp"
-            tools:layout_editor_absoluteY="144dp" />
+            android:layout_below="@+id/cal_btn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/background"
+            android:orientation="vertical"
+            android:padding="10dp">
 
-        <TextView
-            android:id="@+id/textView91"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:textColor="#6b0233"
-            android:text=" Consumers are advised that the power will be disconnect for the purpose of essential construction from 8.00 a.m -5.00 p.m in colombo" />
-    </LinearLayout>
+            <TextView
+                android:id="@+id/date_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textColor="#ffffff"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/time_display"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="116dp"
+                tools:layout_editor_absoluteY="144dp" />
+
+            <TextView
+                android:id="@+id/details_display"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:textColor="#6b0233"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>
+</ScrollView>
