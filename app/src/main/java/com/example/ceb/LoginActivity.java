@@ -71,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
 
 
                         } else if(response.code() == 404){
-                            Toast.makeText( getApplicationContext(), "Email or Password does not match.", Toast.LENGTH_LONG).show();
+                            Toast.makeText( getApplicationContext(), "UserName or Password does not match.", Toast.LENGTH_LONG).show();
                         }
 
                     }
