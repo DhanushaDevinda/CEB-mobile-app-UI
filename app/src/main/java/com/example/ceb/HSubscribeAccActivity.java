@@ -4,12 +4,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class HSubscribeAccActivity extends AppCompatActivity {
 
     Button bill,pay,lbill,accdelete,paym;
+    TextView details;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +24,9 @@ public class HSubscribeAccActivity extends AppCompatActivity {
       lbill =  findViewById(R.id.lastbill);
       accdelete =  findViewById(R.id.accdelete);
       paym = findViewById(R.id.payment);
+      details = (TextView) findViewById(R.id.subscribe_details);
+
+      details.setText(Html.fromHtml("Acc No : 4690224245 <br> Acc Name : Home <br> Name and Address : <br> Kethaki Padmaperuma, <br> no:115, <br>  Dampe road, <br> Meegoda."));
 
       bill.setOnClickListener(new View.OnClickListener() {
           @Override

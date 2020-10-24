@@ -65,37 +65,37 @@
 
             <TextView
                 android:id="@+id/textView32"
-                android:layout_width="191dp"
+                android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:textColor="#6b0233"
-                android:text="Acc. holder's name:"
+                android:text="Acc. holder's name:   Kethaki Padmaperuma"
                 android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/textView33"
-                android:layout_width="191dp"
+                android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Acc. No: "
+                android:text="Acc. No:    4690224315"
                 android:textColor="#6b0233"
                 android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/textView34"
-                android:layout_width="191dp"
+                android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:text="Total bill:"
+                android:text="Total bill:    5064.00"
                 android:textColor="#6b0233"
                 android:textSize="16dp" />
 
             <TextView
                 android:id="@+id/textView35"
-                android:layout_width="191dp"
+                android:layout_width="370dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:textColor="#6b0233"

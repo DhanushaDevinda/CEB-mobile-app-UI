@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HSubscribeAccActivity">
+    tools:context=".HSubscribeAccActivity"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
         android:padding="5dp">
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/subscribe_details"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -23,7 +24,6 @@
             android:layout_marginBottom="10dp"
             android:padding="15dp"
             android:textColor="#6b0233"
-            android:text="Acc No:                          4690224245     Acc Name:                                Home                                 Name and Address:                                                Kethaki Padmaperuma,                                     no:115,                                                        Dampe road,                                                Migoda."
             tools:layout_editor_absoluteX="116dp"
             tools:layout_editor_absoluteY="144dp" />
 
@@ -81,14 +81,21 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button6"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="495dp"
-        android:background="#6b0233"
-        android:text="Subscription Electricity Account"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="698dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#6b0233"
+            android:text="Subscription Electricity Account"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="195dp"
+            tools:layout_editor_absoluteY="698dp" />
+
+    </LinearLayout>
 </LinearLayout>
