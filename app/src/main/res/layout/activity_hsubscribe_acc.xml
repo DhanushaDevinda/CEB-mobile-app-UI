@@ -16,7 +16,7 @@
         android:padding="5dp">
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/subscribe_details"
             android:layout_width="260dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -24,7 +24,6 @@
             android:layout_marginBottom="10dp"
             android:padding="15dp"
             android:textColor="#6b0233"
-            android:text="Acc No:   4690224245                                      Acc Name:   Home                                                                                                                           Name and Address:                                                Kethaki Padmaperuma,                                     no:115,                                                        Dampe road,                                                Migoda."
             tools:layout_editor_absoluteX="116dp"
             tools:layout_editor_absoluteY="144dp" />
 
