@@ -18,6 +18,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="37dp"
+        android:background="#f9f6c1"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:scaleX="1.1"
@@ -46,7 +47,7 @@
             android:layout_below="@+id/cal_btn"
             android:layout_alignParentBottom="true"
             android:layout_marginTop="23dp"
-            android:background="@drawable/background"
+            android:background="#f9f6c1"
             android:orientation="vertical"
             android:padding="10dp">
 
@@ -57,7 +58,7 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
-                android:textColor="#ffffff"
+                android:textColor="#6D153D"
                 android:textSize="30sp"
                 tools:layout_editor_absoluteX="116dp"
                 tools:layout_editor_absoluteY="144dp" />
@@ -70,7 +71,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:textColor="#6b0233"
-                android:textSize="22sp"
+                android:textSize="18sp"
                 tools:layout_editor_absoluteX="116dp"
                 tools:layout_editor_absoluteY="144dp" />
 
