@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HSubscribeAccActivity">
+    tools:context=".HSubscribeAccActivity"
+    >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -81,14 +82,21 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/button6"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="75dp"
-        android:layout_marginTop="340dp"
-        android:background="#6b0233"
-        android:text="Subscription Electricity Account"
-        android:textColor="#ffffff"
-        tools:layout_editor_absoluteX="195dp"
-        tools:layout_editor_absoluteY="698dp" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|bottom">
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:background="#6b0233"
+            android:text="Subscription Electricity Account"
+            android:textColor="#ffffff"
+            tools:layout_editor_absoluteX="195dp"
+            tools:layout_editor_absoluteY="698dp" />
+
+    </LinearLayout>
 </LinearLayout>
