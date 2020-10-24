@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity
         news.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://ceb.lk/"));
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://ceb.lk/news_detail/26/en"));
                 startActivity(browserIntent);
             }
         });

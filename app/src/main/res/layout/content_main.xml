@@ -38,7 +38,7 @@
                     android:background="@drawable/titile"
                     android:orientation="horizontal"
                     android:paddingTop="10dp"
-                    android:paddingRight="20dp"
+                    android:paddingRight="10dp"
                     android:paddingBottom="5dp"
                     android:gravity="center">
 
@@ -54,7 +54,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="10dp"
 
-                        android:layout_marginRight="10dp"
+                        android:layout_marginRight="0dp"
                         android:layout_marginBottom="10dp"
                         android:background="@drawable/titile"
                         android:orientation="vertical">
@@ -74,7 +74,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginRight="0dp"
                             android:text="2020-10-25 14:41:12"
                             android:textSize="14dp" />
 
@@ -313,17 +313,18 @@
                     android:layout_marginRight="10dp"
                     android:background="@drawable/titile"
                     android:orientation="horizontal"
-                    android:paddingTop="20dp"
+                    android:paddingTop="10dp"
                     android:paddingRight="20dp"
-                    android:paddingLeft="10dp"
+                    android:paddingLeft="0dp"
                     android:paddingBottom="20dp"
                     android:gravity="center">
 
 
                     <ImageView
                         android:id="@+id/imageView2"
-                        android:layout_width="95dp"
+                        android:layout_width="90dp"
                         android:layout_height="59dp"
+                        android:layout_marginLeft="0dp"
                         app:srcCompat="@drawable/news" />
 
                     <LinearLayout
