@@ -92,7 +92,7 @@
             android:layout_width="match_parent"
             android:layout_height="75dp"
             android:background="#6b0233"
-            android:text="Subscription Electricity Account"
+            android:text="Subscribe Another Account"
             android:textColor="#ffffff"
             tools:layout_editor_absoluteX="195dp"
             tools:layout_editor_absoluteY="698dp" />

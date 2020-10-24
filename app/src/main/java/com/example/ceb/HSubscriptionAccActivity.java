@@ -16,15 +16,15 @@ public class HSubscriptionAccActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Subscription Account");
 
-        pay = findViewById(R.id.button6);
-
-
-        pay.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(HSubscriptionAccActivity.this, HConfirmPaymentActivity.class);
-                startActivity(intent);
-            }
-        });
+//        pay = findViewById(R.id.button6);
+//
+//
+//        pay.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent = new Intent(HSubscriptionAccActivity.this, HConfirmPaymentActivity.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 }
