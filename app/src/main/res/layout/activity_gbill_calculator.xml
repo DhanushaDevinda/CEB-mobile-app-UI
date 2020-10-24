@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -140,7 +146,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textColor="#6b0233"
-                android:text="Number of days"
+                android:text="Number Of Days"
                 android:textSize="18sp"/>
 
 
@@ -191,7 +197,7 @@
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Number of Units Per Day"
+                android:text="Number Of Units Per Day"
                 android:textColor="#6b0233"
                 android:textSize="18sp"/>
 
@@ -242,7 +248,7 @@
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Number of Units"
+                android:text="Number Of Units"
                 android:textColor="#6b0233"
                 android:textSize="18sp"/>
 
@@ -304,10 +310,9 @@
 
         <LinearLayout
             android:id="@+id/bottom_panel"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="150px"
             android:layout_alignParentBottom="true"
             android:background="#f9f6c1">
             <LinearLayout
@@ -343,16 +348,6 @@
                    android:layout_gravity="center_horizontal"
                    android:text="Rs. 00.00"/>
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/bottom_panel2"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="80px"
-            android:layout_alignParentBottom="true"
-            android:background="#f9f6c1">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -386,19 +381,11 @@
                     android:layout_gravity="center_horizontal"
                     android:text="Rs. 00.00"/>
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/bottom_panel3"
-            android:orientation="horizontal"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/total_charge_background_design">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:padding="25px">
+                android:padding="25px"
+                android:background="@drawable/total_charge_background_design">
                 <TextView
                     android:layout_width="0dip"
                     android:layout_weight="2"
@@ -429,7 +416,6 @@
                     android:text="Rs. 00.00"/>
             </LinearLayout>
         </LinearLayout>
-
     </RelativeLayout>
-
 </LinearLayout>
+</ScrollView>
